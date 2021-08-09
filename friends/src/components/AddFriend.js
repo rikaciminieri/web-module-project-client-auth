@@ -32,9 +32,9 @@ const AddFriend = () => {
   };
 
   return (
-    <div>
+    <div className="title">
       <h3>Add a new Friend</h3>
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className="forms">
         <input
           type="text"
           placeholder="Name"
@@ -56,7 +56,7 @@ const AddFriend = () => {
           onChange={handleChange}
           value={formValues.email}
         />
-        <button>Add Friend</button>
+        <button className="button">Add Friend</button>
       </form>
     </div>
   );

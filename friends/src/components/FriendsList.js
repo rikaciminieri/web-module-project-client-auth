@@ -19,15 +19,15 @@ const FriendsList = () => {
   }, []);
 
   return (
-    <div>
+    <div className="title">
       <h1>Your Friends</h1>
-      <ul>
+      <ul className="friends-list">
         {friendsList ? (
           friendsList.map((friend) => {
             return <li key={friend.id}>{friend.name}</li>;
           })
         ) : (
-          <p> No friends yet! Add a friend</p>
+          <p> Fetching your friends... one sec!</p>
         )}
       </ul>
       <Link to="/add-friend">

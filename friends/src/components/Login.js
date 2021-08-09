@@ -34,23 +34,26 @@ const Login = () => {
   };
 
   return (
-    <form onClick={submit}>
-      <input
-        type="text"
-        placeholder="username"
-        name="username"
-        onChange={handleChange}
-        value={credentials.username}
-      />
-      <input
-        type="password"
-        placeholder="password"
-        name="password"
-        onChange={handleChange}
-        value={credentials.password}
-      />
-      <button>Log In</button>
-    </form>
+    <div className="title">
+      <h3>Log In</h3>
+      <form onClick={submit} className="forms">
+        <input
+          type="text"
+          placeholder="username"
+          name="username"
+          onChange={handleChange}
+          value={credentials.username}
+        />
+        <input
+          type="password"
+          placeholder="password"
+          name="password"
+          onChange={handleChange}
+          value={credentials.password}
+        />
+        <button className="button">Log In</button>
+      </form>
+    </div>
   );
 };
 
